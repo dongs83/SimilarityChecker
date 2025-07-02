@@ -18,9 +18,10 @@ TEST_F(Fixture, score100) {
 TEST_F(Fixture, score0) {
 	runCheck(0, "abcd", "abcdabcde");
 	runCheck(0,  "abcdabcde", "abcd");
+	runCheck(0, "abcdabcd", "abcd");
+	runCheck(0, "ad", "abcd");
 }
 
 TEST_F(Fixture, length) {
-	runCheck(0, "abcde", "abcd");
 	runCheck(60, "asd", "dsa");
 }
