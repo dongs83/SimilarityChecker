@@ -16,7 +16,7 @@ public:
 	}
 	int getLengthScore(std::string& str1, std::string& str2)
 	{
-		double ret;
+		double ret = 0;
 		if (str1.length() == str2.length()) {
 			ret += 60;
 		}
